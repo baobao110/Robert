@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg1"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:orientation="horizontal" >
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" 
+            android:gravity="center_vertical"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+            
+            <TextView  
+               android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_marginLeft="60dp"
+	           android:textSize="22dp"
+	           android:textColor="@color/white"
+               android:text="姓名："/>
+            
+            <TextView 
+               android:id="@+id/choose_name_text"
+               android:layout_width="wrap_content"
+	           android:layout_height="wrap_content" 
+	           android:textSize="20dp"
+	           android:textColor="@color/white"
+               android:text=""/>
+            
+            <TextView 
+               android:layout_width="wrap_content"
+	           android:layout_height="wrap_content" 
+	           android:textSize="22dp"
+	            android:layout_marginLeft="50dp"
+	           android:textColor="@color/white"
+               android:text="学号："/> 
+             <TextView
+               android:id="@+id/choose_studentid_text" 
+               android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	          
+	           android:textSize="20dp"
+	           android:textColor="@color/white"
+               android:text=""/> 
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"  
+            android:gravity="right"
+            android:orientation="horizontal">
+              <ImageView 
+                 android:id="@+id/choose_exit_img"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp" 
+	            android:src="@drawable/exit"/>
+         </LinearLayout>
+         
+ 
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:orientation="horizontal" >
+        
+        
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50dp" 
+            android:orientation="vertical">
+             
+             <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="60dp"
+	             android:layout_marginRight="20dp">
+	            <TextView 
+		            android:id="@+id/choose_prompt"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/white" 
+		            android:textSize="30dp"
+		            android:text=""/>
+                 
+             </LinearLayout>
+             
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="60dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginTop="150dp"
+                 android:orientation="horizontal" >
+
+	             <LinearLayout 
+	                 android:layout_width="0dp"
+	                 android:layout_height="wrap_content"
+	                 android:layout_weight="1" 
+	                 android:orientation="vertical">
+	                 
+	                 <ImageView 
+	                     android:id="@+id/choose_book_img"
+	                     android:layout_width="100dp"
+	                     android:layout_height="100dp"
+	                     android:layout_gravity="center_horizontal" 
+	                     android:src="@drawable/book"/>
+	                 
+	                 <TextView 
+			            android:id="@+id/choose_ask_text"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/white" 
+			            android:textSize="20dp" 
+			            android:layout_marginTop="10dp"  
+			            android:layout_gravity="center_horizontal"
+			            android:text="@string/main_ask"/>
+	                 
+	             </LinearLayout>
+	             <LinearLayout 
+	                 android:layout_width="0dp"
+	                 android:layout_height="wrap_content"
+	                 android:layout_weight="1" 
+	                  android:visibility="gone"
+	                 android:orientation="vertical" >
+	                 
+	                 <ImageView 
+	                     android:id="@+id/choose_lx_img"
+	                     android:layout_width="100dp"
+	                     android:layout_height="100dp" 
+	                     android:layout_gravity="center_horizontal"
+	                      android:visibility="gone"
+	                     android:src="@drawable/lx"/>
+	                 
+	                 <TextView 
+			            android:id="@+id/choose_guess_text"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/white"
+			            android:layout_marginTop="10dp" 
+			            android:textSize="20dp"  
+			             android:visibility="gone"
+			            android:layout_gravity="center_horizontal"
+			            android:text="@string/main_guessing"/>
+	                 
+	             </LinearLayout>
+	             <LinearLayout 
+	                 android:layout_width="0dp"
+	                 android:layout_height="wrap_content"
+	                 android:layout_weight="1" 
+	                 android:orientation="vertical">
+	                 
+	                 <ImageView 
+	                     android:id="@+id/choose_pk_img"
+	                     android:layout_width="100dp"
+	                     android:layout_height="100dp"
+	                     android:layout_gravity="center_horizontal" 
+	                     android:src="@drawable/pk"/>
+	                 
+	                 <TextView 
+			            android:id="@+id/choose_pk_text"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/white"
+			            android:layout_marginTop="10dp" 
+			            android:textSize="20dp"  
+			            android:layout_gravity="center_horizontal"
+			            android:text="@string/main_pk"/>
+	                 
+	             </LinearLayout>
+	             <LinearLayout 
+	                 android:layout_width="0dp"
+	                 android:layout_height="wrap_content"
+	                 android:layout_weight="1" 
+	                 android:orientation="vertical">
+	                 
+	                 <ImageView 
+	                     android:id="@+id/choose_music_img"
+	                     android:layout_width="100dp"
+	                     android:layout_height="100dp"
+	                     android:layout_gravity="center_horizontal" 
+	                     android:src="@drawable/music"/>
+	                 
+	                 <TextView  
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="@color/white"
+			            android:layout_marginTop="10dp" 
+			            android:textSize="20dp" 
+			            android:layout_gravity="center_horizontal"
+			            android:text="奥运音乐欣赏"/>
+	                 
+	             </LinearLayout>
+	         </LinearLayout>
+               
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

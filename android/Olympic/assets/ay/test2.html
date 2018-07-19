@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+	.loading{
+	
+	position: absolute;
+	width: 4em;
+	height: 4em;
+	display: inline-block;
+	left: 47%;
+	top: 0.1em;
+	border-radius: 2em;
+	
+}
+.loading .demo2{
+   transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+		</style>
+	</head>
+	<body>
+		
+<svg xmlns="http://www.w3.org/200/svg"  class="loading">
+	 <circle class="demo2"  cx="30" cy="30" r="32" stroke="#f0f0f0"
+  stroke-width="1" fill="#FFFFFF" />
+ 
+
+	<circle class="demo2" cx="30" cy="30" r="25" fill="none" stroke="#FFA640"  stroke-width="8" stroke-linecap="round"/>
+    <circle  class="demo2"  id="J_progress_bar" cx="30" cy="30" r="25" fill="none" stroke="#FFFFFF" stroke-dasharray="0,10000"   stroke-width="15" stroke-linecap="round" />
+   
+   <circle class="demo2" cx="30" cy="30" r="20" stroke="#ffffff"
+  fill="#066A87" />
+ 
+   <text text-anchor="middle" x="30" y="40" id="text" fill="#ffffff" font-size="16PT" font-weight="bold" stroke="#F0F0F0">10</text>
+</svg>
+
+<script type="text/javascript">
+
+var demo1 =  document.querySelector("#J_progress_bar");
+
+
+var circleLength = Math.floor(2 * Math.PI * demo1.getAttribute("r"));
+
+var val1=0;
+
+
+function rotateCircle () {
+  
+    
+   // demo1.setAttribute("stroke-dasharray","" + circleLength * val1 / 100 + ",10000");
+     demo1.setAttribute("stroke-dasharray","" + circleLength * 100 / 100 + ",10000");
+    val1+=10;
+    
+}
+setInterval("rotateCircle()",1000);
+</script>
+	</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>奥运知识竞答</title>
+		<link rel="stylesheet" href="css/animations.css" />
+		<link rel="stylesheet" href="css/pbindex.css?v=2" />
+		<link rel="stylesheet" href="js/layer_mobile/need/layer.css" />
+	</head>
+
+	<body>
+		<div id="loading">
+			
+			
+			<!--初始-->
+			<div class="single" id="loadfirst"  >
+ 
+				<em class="em1"> <em class="em2"> <em class="em3"></em></em>
+				</em>
+				<div class="textdiv"><b class="oneb username"></b><b class="oneb fromwhere"></b><b class="oneb  level"></b></div>
+
+			</div>
+			
+			
+			<!--用户匹配-->
+			<div id="pzpage"  >
+
+				<div id="qj2" class="qjdiv pt-page-FromLeft">
+					<div class="userinfo" id="myuser">
+						<img class="userimg" src="img/tx.png" />
+						<b class="name"></b>
+						<b class="from"></b>
+					</div>
+
+				</div>
+
+				<div id="qj1" class="qjdiv pt-page-FromRight">
+
+					<div class="userinfo" id="otheruser">
+						<img class="userimg" src="img/tx.png" />
+						<b class="name"></b>
+						<b class="from"></b>
+					</div>
+					
+				</div>
+
+				<img src="img/pbvs.png" class="pt-page-scaleUp pt-page-scaleBig" id="title" />
+
+			</div>
+
+			<!--	答题-->
+			<div id="main"  >
+				<div id="head">
+					
+					<div id="leftdiv" class="user_info pt-page-FromLeft">
+						<div class="imgdiv"><img src="img/tx.png" /></div>
+						<b class="uname">用户</b>
+						<b class="uscore">0</b>
+					</div>
+
+					<div id="rightdiv" class="user_info pt-page-FromRight">
+						<div class="imgdiv"><img src="img/tx.png" /></div>
+						<b class="uname">用户</b>
+						<b class="uscore">0</b>
+
+					</div>
+					
+					
+<svg xmlns="http://www.w3.org/200/svg"    id="jdloading">
+	 <circle class="onecrl"  cx="33" cy="33" r="29" stroke="#E0E0E0"
+  stroke-width="5" fill="#E0E0E0" />
+ 
+
+	<circle class="onecrl" cx="33" cy="33" r="24" fill="none" stroke="#69C7D2"  stroke-width="9" stroke-linecap="round"/>
+    <circle  class="onecrl"  id="J_progress_bar" cx="33" cy="33" r="24" fill="none" stroke="#F18A31" stroke-dasharray="0,10000"   stroke-width="5" stroke-linecap="round" />
+   
+   <circle class="onecrl" cx="33" cy="33" r="17" stroke="#E0E0E0" fill="#E0E0E0" />
+ 
+   <text id="loadnum" text-anchor="middle" x="33" y="43" id="text" fill="#066A87"  font-size="15PT"  stroke="#066A87">10</text>
+</svg>
+				</div>
+
+				<div id="bodyarea">
+					<div id="showIndex" class="pt-page-scaleUp pt-page-scaleBig">第<b></b>题</div>
+					<div id="iteminfo">
+						<div id="question"></div>
+						<div id="chooselist">
+							<div class="chooseone  pt-page-FromTop" onclick='chooseThisAnswer("A",this)' id="chooseA"><i class="myi"></i><i class="otheri"></i><span></span></div>
+							<div class="chooseone  pt-page-FromLeft" onclick='chooseThisAnswer("B",this)' id="chooseB"><i class="myi"></i><i class="otheri"></i><span></span></div>
+							<div class="chooseone  pt-page-FromRight" onclick='chooseThisAnswer("C",this)' id="chooseC"><i class="myi"></i><i class="otheri"></i><span></span></div>
+							<div class="chooseone  pt-page-FromBottom" onclick='chooseThisAnswer("D",this)' id="chooseD"><i class="myi"></i><i class="otheri"></i><span></span></div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--结果-->
+			<div id="resarea" >
+				<!--<div id="head">
+					<div id="resleftdiv" class="user_info pt-page-FromLeft">
+						<div class="imgdiv"><img src="img/timg.jpg" /></div>
+						<b class="uname"></b>
+
+					</div>
+
+					<div id="resrightdiv" class="user_info pt-page-FromRight">
+						<div class="imgdiv"><img src="img/timg.jpg" /></div>
+						<b class="uname"></b>
+
+					</div>
+
+				</div>-->
+				<div id="headinfo" >
+					
+					<div class="resimg pt-page-scaleUp pt-page-scaleBig"></div>
+					
+					<img class="jgleft_img" src="img/tx.png"/>
+					
+					<img class="jgright_img" src="img/tx.png"/>
+
+					<div id="headinfo_leftdiv" class="user_info pt-page-FromLeft">
+						
+						
+						 
+						<div class="jgleft" ><b class="uname">姓名</b></div> 
+						<div class="jgleft"><b class="myusore">0</b>分</div>
+						<b class="ucore">答对<em>0</em>题</b> 
+					</div>
+
+					<div id="headinfo_rightdiv" class="user_info pt-page-FromRight">
+						
+						
+						<div class="jgright"><b class="uname">姓名</b></div> 
+						<div class="jgright"><b class="myusore">0</b>分</div>
+						<b class="ucore">答对<em>0</em>题</b>
+
+					</div>
+					
+			
+			
+				</div>
+				
+				
+				<div id="catchdiv">
+					<div class="oneresdiv pt-page-FromLeft">
+						
+						<i class="jf"></i>
+						<b class="numshow" id="jfnum"></b>
+					</div>
+					<div class="oneresdiv pt-page-FromRight">
+						<i class="exp"></i>
+						<b class="numshow" id="expnum"></b>
+						
+					</div>
+				</div>
+				
+				<div id="resbtn">
+					<!--后续-->
+					<div id="tzbtn" class="btn pt-page-scaleUp pt-page-scaleBig" onclick="goStart()"></div>
+					
+					<div id="cancelbtn" class="btn pt-page-FromBottom" onclick="returnFirst()"></div>
+					
+				</div>
+				
+			</div>
+
+
+
+			<div id="returnBG" onclick="returnFirst()"></div>
+		</div>
+		
+			
+		<!--<audio   id="rightem" src="http://www.chuange.cn/ay/assets/audio/1.wav" type="audio/x-wav" hidden="true"  	preload="preload"></audio > 
+		<audio   id="errorem" src="http://www.chuange.cn/ay/assets/audio/error.wav" type="audio/x-wav" hidden="true"   	preload="preload"></audio > 
+		-->
+	</body>
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/layer_mobile/layer.js"></script>
+	<script type="text/javascript" src="js/loadM.js"></script>
+	<script type="text/javascript" src="js/main.js?v=2"></script>
+<script type="text/javascript" src="js/ajaxLogin.js"></script>
+</html>

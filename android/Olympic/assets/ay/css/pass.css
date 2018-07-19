@@ -1,0 +1,47 @@
+body{margin: 0px;padding: 0px; overflow: hidden; background-image: url(../img/mysort.jpg);  background-repeat: no-repeat;background-size: cover;}
+.top_bg{width:100%;height: 200px; background: #3CA8D8; border-radius:60px; position: fixed; top: -100px;}
+
+.pass_head{width: 80%;height: 80px;margin-right: 10%;margin-left: 10%;z-index: 10; position: fixed; top:0px;;}
+.pass_head_line{width: 100%;height: 40px; line-height: 40px;color: #FFFFFF; font-size: 18px;}
+.pass_head_a{width: 80%; float: left;height: 40px; line-height: 40px; text-align: center;color: #FFFFFF; }
+.pass_head_b{width: 20%; float: left;height: 40px; line-height: 40px;text-align: center; }
+.pass_head_b a{color: #FFFFFF; text-decoration:none;}
+
+.pk_a{width: 25%;float: left; text-align: center;}
+.pk_a img{width: 18px; height: 18px;}
+.pk_a span{margin-left: 5px;}
+.pk_b{width: 50%;float: left; text-align: center;line-height: 50px;}
+.pk_b img{width: 18px; height: 18px;float: left; margin-left: 30px; margin-top:12px;vertical-align: middle;}
+.pk_b span{margin-left: 5px;float: left; }
+
+
+.pass_all{width: 80%;height: 65%; margin-right: 10%;margin-left: 10%;z-index: 10; position: fixed;top:25%;overflow-x: hidden;  white-space:nowrap;}
+.pass_one{width: 33%;height: 180px; float: left; }
+.pass_one_box{width: 160px; height: 160px; margin-left: auto; margin-right: auto; background-image: url(../img/pbox.png);background-repeat: no-repeat;background-size: cover;}
+
+.pbox_line1{height: 50px; line-height: 50px;}
+.pbox_line1 .pbox_num{width: 40px; height: 50px; line-height: 50px; text-align: center;color: #FFFFFF; font-size: 20px;background-image: url(../img/pboxnum.png);background-repeat: no-repeat;background-size: cover;;}
+.pbox_line2{height: 60px; line-height: 60px; text-align: center;}
+.pbox_line2 img{width: 60px; height: 60px;;}
+.pbox_line3{height: 50px; line-height: 50px; text-align: center; font-size: 24px; color: #FD5001; font-weight: 900;}
+
+
+
+ 
+
+#returnBG{
+	width:40px;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99999999999999;
+	display: block;
+	background: url(../img/return.png) no-repeat center;
+	background-size:100%  ;
+	opacity: 0.9;
+}
+
+
+.bottom_bg{width:100%;height: 100px; background: #7DC8DD; border-radius:30px; position: fixed; bottom: -60px; z-index: 20;}
+.bottom_info{width: 80%;height:40px;line-height: 40px; margin-right: 10%;margin-left: 10%; text-align: center;color: #FFFFFF;}

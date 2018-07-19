@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@drawable/bg3"
+    android:orientation="vertical">
+     
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent" 
+	        android:orientation="horizontal" >
+	        
+	         <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="5"
+	            android:orientation="vertical">
+	              
+	             <ListView 
+	                android:id="@+id/music_list"
+	                android:layout_width="fill_parent" 
+		            android:layout_height="match_parent" 
+		            android:divider="@null"
+		            android:scrollbars="none"></ListView>
+	             
+	         </LinearLayout>
+	         <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="2"
+	            android:orientation="vertical">
+	         </LinearLayout> 
+	     </LinearLayout>
+	     
+        <ImageView 
+         android:id="@+id/musiclist_exit_img"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_gravity="right" 
+         android:src="@drawable/exit"/>
+        
+    </FrameLayout>
+    
+    
+    
+
+</LinearLayout>

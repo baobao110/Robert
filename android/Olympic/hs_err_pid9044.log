@@ -1,0 +1,109 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=9044, tid=3684
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_67-b01) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.65-b04 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002ad0800):  JavaThread "Unknown thread" [_thread_in_vm, id=3684, stack(0x0000000002930000,0x0000000002a30000)]
+
+Stack: [0x0000000002930000,0x0000000002a30000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002ad0800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3684, stack(0x0000000002930000,0x0000000002a30000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.678 loading class 0x0000000002b15130 done
+Event: 0.678 loading class 0x0000000002b14b50 done
+Event: 0.678 loading class 0x0000000002b14b30
+Event: 0.678 loading class 0x0000000002b1cc80
+Event: 0.678 loading class 0x0000000002b1cc80 done
+Event: 0.678 loading class 0x0000000002b1ccb0
+Event: 0.678 loading class 0x0000000002b1ccb0 done
+Event: 0.678 loading class 0x0000000002b1cce0
+Event: 0.678 loading class 0x0000000002b1cce0 done
+Event: 0.678 loading class 0x0000000002b14b30 done
+
+
+Dynamic libraries:
+0x00007ff78d440000 - 0x00007ff78d473000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007ffb3cca0000 - 0x00007ffb3ce61000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb3a6f0000 - 0x00007ffb3a79d000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffb39100000 - 0x00007ffb392e8000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffb3c460000 - 0x00007ffb3c507000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffb3a980000 - 0x00007ffb3aa1d000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffb3cc00000 - 0x00007ffb3cc5b000 	C:\WINDOWS\system32\sechost.dll
+0x00007ffb3a5d0000 - 0x00007ffb3a6ec000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffb3c790000 - 0x00007ffb3c8e6000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffb3a7d0000 - 0x00007ffb3a956000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffb2b640000 - 0x00007ffb2b8b4000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10586.494_none_a2d8b04ea53e3145\COMCTL32.dll
+0x00007ffb3a2e0000 - 0x00007ffb3a55d000 	C:\WINDOWS\system32\combase.dll
+0x00007ffb39b90000 - 0x00007ffb39bfa000 	C:\WINDOWS\system32\bcryptPrimitives.dll
+0x00007ffb3cc60000 - 0x00007ffb3cc9b000 	C:\WINDOWS\system32\IMM32.DLL
+0x0000000062d90000 - 0x0000000062e62000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x00000000625b0000 - 0x0000000062d82000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007ffb39480000 - 0x00007ffb394a3000 	C:\WINDOWS\system32\WINMM.dll
+0x00007ffb390a0000 - 0x00007ffb390cc000 	C:\WINDOWS\system32\WINMMBASE.dll
+0x00007ffb39420000 - 0x00007ffb39463000 	C:\WINDOWS\system32\cfgmgr32.dll
+0x00007ffb3a1d0000 - 0x00007ffb3a1d8000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffb2dc80000 - 0x00007ffb2dc89000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffb3c6c0000 - 0x00007ffb3c72b000 	C:\WINDOWS\system32\WS2_32.dll
+0x00000000625a0000 - 0x00000000625af000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000062570000 - 0x0000000062598000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000062550000 - 0x0000000062565000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\myfile\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\sdk\platforms\android-19\android.jar 
+java_command: com.hysm.olympic.tool.Word_tool
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_67
+CLASSPATH=.;C:\Program Files\Java\jdk1.7.0_67\bin\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_67\bin\lib\tools.jar
+PATH=C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;D:\oracle\product\10.2.0\client_1\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\iFLYTEK\VoiceAssistant\SpeechPlusRuntime;C:\Program Files\TortoiseSVN\bin;D:\Android studio1\Android sdk\tools;D:\Android studio1\Android sdk\platform-tools;C:\Program Files (x86)\MySQL\MySQL Server 5.0\bin;C:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\Java\jdk1.7.0_67\jre\bin;D:\apache-maven-3.5.2\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Users\songkai\AppData\Roaming\npm;D:\myfile\adt-bundle-windows-x86_64-20140321\adt-bundle-windows-x86_64-20140321\eclipse;
+USERNAME=songkai
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, erms, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 8278296k(4559092k free), swap 9589016k(3968148k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.65-b04) for windows-amd64 JRE (1.7.0_67-b01), built on Jul 25 2014 08:55:00 by "java_re" with unknown MS VC++:1600
+
+time: Thu Jun 14 14:54:10 2018
+elapsed time: 0 seconds
+
